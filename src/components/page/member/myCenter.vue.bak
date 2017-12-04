@@ -116,9 +116,10 @@
 </template>
 
 <script>
+
 	import {mapState, mapMutations} from 'vuex'
-    import {loginByCode, loginByToken} from 'src/service/getData'
-    import {doAuthRedirect} from 'src/service/redirect'
+    import {getWeixinLoginCode, loginByCode, loginByToken} from 'src/service/getData'
+    import {wxWebUrl} from '../../../../config/env'
     
 	export default {
 		data() {
@@ -141,7 +142,7 @@
                 'userInfo',
             ]),
             initUserInf() {
-            	//console.log(this);
+            	console.log(this);
             	// 从缓存中读取用户信息，包括token与uid
 				this.GET_USERINFO();
 				
@@ -154,10 +155,10 @@
 				}
             },
 			async login() {
-				var code = this.$route.query.code;
-				var state = this.$route.query.state;
-				var step = this.$route.query.step;
-				console.log("code: %s, state: %s, step: %s", code, state, step);
+				/*
+				var code = this.$route.params.code;
+				var state = this.$route.params.state;
+				console.log("code: %s, state: %s", code, state);
 				
 				if (code && state) {
 					// 登录, 获取用户信息，包括token与uid
@@ -172,18 +173,18 @@
 					let info = await loginByToken(this.userInfo.token, this.userInfo.uid);
 					this.procLoginResult(info);
 				} else {
-					if (!step) {
-						doAuthRedirect('/member/center?step=1');
-					} else {
-						alert("参数错误");
-					}
-				}
+					// 调用微信授权登录页面
+					var cb = wxWebUrl + '/member/center';
+					console.log("login cb: %s", cb);
+					await getWeixinLoginCode(cb);
+				}//*/
 			},
 			doLoginOK() {
 				this.RECORD_USERINFO(this.userInfo);
+
 			}
 		}
-	}
+	}*/
 </script>
 
 <style>

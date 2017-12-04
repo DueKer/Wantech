@@ -87,6 +87,9 @@
 		text-align: center;
 		font-size: 24px;
 	}
+	.scoreList{
+		padding-bottom: 20px;
+	}
 	
 	.scoreList ul .scoreList-item{
 		margin-top: 10px;

@@ -1,6 +1,64 @@
 <template>
 	<div>
-		<h1>提现</h1>
+		<div class="withdraw-content">
+			<div class="withdraw-bank">
+				<span class="withdraw-label">提现到</span>
+				<div class="withdraw-bank-info">农业银行(4275)</div>
+				<span class="withdraw-selects"></span>
+			</div>
+			<div class="withdraw-tx">
+				<div class="withdraw-tx-content">
+					<p class="hand">提现金额</p>
+					<div class="withdraw-tx-input">
+						<i class="dols">¥</i>
+						<input type="" name="" id="" value="" class="moneyNum" />
+					</div>
+				</div>
+				<div class="withdraw-tx-bance">
+					可提金额：<i class="figure">288.00</i>
+					<span class="withdraw-qtx">全部提现</span>
+				</div>
+			</div>
+			<div class="withdraw-buttonCont">
+					<mt-button>提现</mt-button>
+					<p class="status">提交完成后48小时内审核到账</p>
+				</div>
+		</div>
+		<!--弹层-->
+			<div class="withdraw-bankMask">
+				<div class="withdraw-bankMask-content">
+					<div class="withdraw-content-header">
+						<p>选择到账银行卡</p>
+						<p class="status">请留意个银行卡到账时间</p>
+						<span class="close_X">
+							
+						</span>
+					</div>
+					<div class="withdraw-bankCard-Content">
+						<div class="withdraw-bankCard-item">
+							<span class="bankImg">
+								
+							</span>
+							<div class="card-item">
+								<p class="bankID">招商银行 储蓄卡 (1345)</p>
+								<p class="status">2小时内到账</p>
+							</div>
+						</div>
+						<div class="withdraw-bankCard-item">
+							<span class="bankImg">
+								
+							</span>
+							<div class="card-item">
+								<p class="bankID">招商银行 储蓄卡 (1345)</p>
+								<p class="status">2小时内到账</p>
+							</div>
+						</div>
+						<div class="withdraw-bankCard-item last-child">
+							<div class="card-item">使用新卡提现</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
 </template>
 
@@ -8,4 +66,191 @@
 </script>
 
 <style>
+	.withdraw-bank {
+		height: 44px;
+		border-bottom: 1px solid #D5D5D5;
+		padding: 0 15px;
+		background: #FFFFFF;
+		position: relative;
+		margin-top: 10px;
+		line-height: 44px;
+		display: flex;
+		display: -webkit-flex;
+	}
+	
+	.withdraw-label {
+		display: block;
+		width: 60px;
+		font-size: 15px;
+	}
+	
+	.withdraw-bank-info {
+		color: #1ab5bf;
+		font-size: 15px;
+		padding-left: 35px;
+	}
+	
+	
+	.withdraw-bank .withdraw-selects {
+		display: block;
+		width: 17px;
+		height: 10px;
+		background: url(/static/img/cz_select.png) no-repeat;
+		background-size: 17px 10px;
+		position: absolute;
+		right: 17px;
+		top: 18px;
+	}
+	
+	.withdraw-tx{
+		margin-top: 10px;
+	}
+	.withdraw-tx-content{
+		padding:7px  15px;
+		border-bottom: 1px solid #D5D5D5;
+		background: #FFFFFF;
+		position: relative;
+	}
+	.withdraw-tx-input{
+		height: 50px;
+		position: relative;
+	}
+	.withdraw-tx-content .hand{
+		color: #333333;
+		text-align: left;
+		font-size: 15px;
+	}
+	.withdraw-tx-input .dols{
+		font-style: normal;
+		position: absolute;
+		left: 0;
+		top: 5px;
+		font-size: 28px;
+	}
+	
+	.withdraw-tx-input .moneyNum{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		padding-left: 20px;
+		font-size: 28px;
+		line-height: 50px;
+		border: none;
+		
+	}
+	
+	.withdraw-tx-bance{
+		padding: 15px ;
+		border-bottom: 1px solid #D5D5D5;
+		color: #999999;
+		font-size: 14px;
+		background: #FFFFFF;
+		text-align: left;
+		position: relative;
+	}
+	.figure{
+		font-style: normal;
+	}
+	
+	.withdraw-qtx{
+		color: #dd3e3e;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+	}
+	
+		.withdraw-buttonCont {
+		width: 100%;
+		margin-top: 30px;
+		padding: 0 15px;
+	}
+	
+	.withdraw-buttonCont .mint-button--normal {
+		width: 100%;
+		background: #f19e38;
+		color: #FFFFFF;
+	}
+	
+	.withdraw-buttonCont .status{
+		margin-top: 10px;
+		font-size: 12px;
+		color: #999999;
+		text-align: left;
+	}
+	
+	.withdraw-bankMask{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		background: rgba(0,0,0,.5);
+	}
+	
+	.withdraw-bankMask-content{
+		width: 100%;
+		background: #FFFFFF;
+		margin: auto;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	
+	.withdraw-content-header{
+		padding: 17px 15px;
+		border-bottom: 1px solid #d5D5D5;
+		position: relative;
+		font-size: 15px;
+	}
+	
+	.withdraw-content-header .status{
+		font-size: 12px;
+		color: #999999;
+	}
+	
+	.close_X{
+		display: block;
+		width: 14px;
+		height: 14px;
+		background: url(/static/img/close.png) no-repeat;
+		background-size: 14px;
+		position: absolute;
+		left: 15px;
+		top: 15px;
+	}
+		.withdraw-bankCard-Content  {
+			padding-bottom: 70px;
+		}
+	.withdraw-bankCard-Content  .last-child{
+		margin-left: 0;
+		padding-left: 30px;
+	}
+	.withdraw-bankCard-item{
+		padding: 10px 15px;
+		border-bottom: 1px solid #D5D5D5;
+		text-align: left;
+		position: relative;
+		margin-left: 15px;
+	}
+	
+	.withdraw-bankCard-item .bankImg{
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: red;
+		border-radius: 50%;
+		position: absolute;
+		left: 15px;
+		top: 10px;
+	}
+	
+	.withdraw-bankCard-item .card-item{
+		padding-left: 35px;
+		font-size: 15px;
+	}
+	
+	.withdraw-bankCard-item .status{
+		font-size: 12px;
+		color: #999999;
+	}
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		会员制度
+		<h1>生日礼包</h1>
 	</div>
 </template>
 

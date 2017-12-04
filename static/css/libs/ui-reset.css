@@ -6,7 +6,7 @@
   small{ font-size:12px; }
   ul, ol { list-style:none; }
   a { text-decoration:none; color: #333333;}
-  a:hover { text-decoration:underline; }
+ html body a:hover { text-decoration:none; color: #333333;}
  sup { vertical-align:text-top; }
  sub{ vertical-align:text-bottom; }
  legend { color:#000; }

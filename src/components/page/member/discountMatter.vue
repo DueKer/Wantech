@@ -1,6 +1,6 @@
 <template>
 	<div>
-		会员制度
+		<h1>折扣公告内容</h1>
 	</div>
 </template>
 

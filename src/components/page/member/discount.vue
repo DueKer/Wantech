@@ -29,7 +29,7 @@
 	.discount-content {
 		margin: 10px 15px;
 		padding: 100px 15px 0 15px;
-		background: #FFFFFF url(../../../../static/img/zhekou.png) no-repeat top;
+		background: #FFFFFF url(/static/img/zhekou.png) no-repeat top;
 		background-size: 100px;
 		min-height: 100px;
 		background-size: 100%;
