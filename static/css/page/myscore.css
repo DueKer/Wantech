@@ -1,0 +1,91 @@
+.scoreHead{
+		padding: 20px 15px;
+		background: #FFFFFF;
+	}
+	
+	.scoreHead .headline{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	
+	.scoreBack{
+		width: 128px;
+		height: 128px;
+		background: url(/static/img/jifen_bg.png) no-repeat;
+		background-size: 100%;
+		margin:10px auto;
+		line-height: 128px;
+	}
+	
+	.scoreBack .Jnumber{
+		text-align: center;
+		font-size: 24px;
+	}
+	.scoreList{
+		padding-bottom: 20px;
+	}
+	
+	.scoreList ul .scoreList-item{
+		margin-top: 10px;
+		border-bottom:1px solid #e5e5e5;
+		background: #FFFFFF;
+	}
+	
+	
+	.scoreList-item .order-message{
+		border-bottom:1px solid #e5e5e5;
+		padding: 15px;
+		display: flex;
+		display: -webkit-flex;
+	}
+	
+	.order-message .spImg{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: #CCCCCC;
+		margin-right: 10px;
+	}
+	.order-message .spImg img{
+		width: 30px;
+		height: 30px;
+	}
+	.order-message .order-message-right p{
+		text-align: left;
+	}
+	
+	.order-message-right .headline{
+		font-size: 18px;
+		color: #333333;
+	}
+	
+	.order-message-right .time,
+	.order-message-right .gross-price{
+		font-size: 14px;
+		color: #999999;
+	}
+	.order-message-right .time span,
+	.order-message-right .gross-price span{
+		margin-left: 10px;
+	}
+	
+	.grade-bottom{
+		padding: 10px 15px;
+		text-align: right;
+	}
+	.grade-bottom .img{
+		display: inline-block;
+		width: 19px;
+		height: 20px;
+		background: url(/static/img/grade_num.png) no-repeat;
+		background-size: 19px 20px;
+		margin-right: 10px;
+		margin-top: 2px;
+	}
+	.grade-bottom .gradeNum{
+		font-size: 15px;
+	}
+	.grade-bottom .gradeDeta i {
+		font-style: normal;
+		font-weight: bold;
+	}

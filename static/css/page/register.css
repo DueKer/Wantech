@@ -1,0 +1,64 @@
+.register-content-header {
+		padding: 18px 15px;
+		font-size: 19px;
+		color: #555555;
+	}
+	
+	.register-from a {
+		text-decoration: none;
+	}
+	
+	.register-from .mint-cell-wrapper {
+		padding-left: 0;
+		font-size: 15px;
+	}
+	
+	.register-from .mint-cell-wrapper .mint-cell-title {
+		text-align: left;
+		padding-left: 15px;
+	}
+	
+	.register-from .mint-cell-wrapper .mint-cell-value {
+		font-size: 13px;
+		margin-top: 5px;
+	}
+	
+	.register-from .mint-cell-wrapper .mint-cell-value .mint-field-core {
+		background: #FFFFFF;
+	}
+	
+	.register-buttonCont {
+		width: 100%;
+		margin-top: 30px;
+		padding: 0 15px;
+	}
+	
+	.register-from-item {
+		margin-bottom: 10px;
+	}
+	
+	.register-buttonCont .mint-button--normal {
+		width: 100%;
+		background: #f19e38;
+		color: #FFFFFF;
+	}
+	
+	.register-from .yzm {
+		display: block;
+		width: 100px;
+		height: 30px;
+		line-height: 30px;
+		background: #f19e38;
+		color: #FFFFFF;
+		border-radius: 3px;
+		margin-top: -5px;
+	}
+	
+	.register-buttonCont .status{
+		text-align: left;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	.register-buttonCont .status span{
+		color: #f19e38;
+	}
