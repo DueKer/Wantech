@@ -1,0 +1,55 @@
+.emailCation-content-header {
+		padding: 18px 15px;
+		font-size: 19px;
+		color: #555555;
+	}
+	
+	.emailCation-from a {
+		text-decoration: none;
+	}
+	
+	.emailCation-from .mint-cell-wrapper {
+		padding-left: 0;
+		font-size: 15px;
+	}
+	
+	.emailCation-from .mint-cell-wrapper .mint-cell-title {
+		text-align: left;
+		padding-left: 15px;
+	}
+	
+	.emailCation-from .mint-cell-wrapper .mint-cell-value {
+		font-size: 13px;
+		margin-top: 5px;
+		padding:0 15px;
+	}
+	
+	.emailCation-from .mint-cell-wrapper .mint-cell-value .mint-field-core {
+		background: #FFFFFF;
+		font-size: 14px;
+	}
+	
+	.emailCation-buttonCont {
+		width: 100%;
+		margin-top: 30px;
+		padding: 0 15px;
+	}
+	
+	.emailCation-from-item {
+		margin-bottom: 10px;
+	}
+	
+	.emailCation-buttonCont .mint-button--normal {
+		width: 100%;
+		background: #f19e38;
+		color: #FFFFFF;
+	}
+	
+.emailCation-from-item  .status{
+	text-align: left;
+	font-size: 15px;
+	color: #dd3e3e;
+	font-size: 12px;
+	margin-top: 10px;
+	padding-left: 15px;
+}
